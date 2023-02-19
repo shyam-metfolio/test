@@ -1,0 +1,72 @@
+//
+// Theme style
+//
+
+// Initialize
+@import 'init';
+
+// Components
+@import './core/components/components';
+@import 'components/components';
+
+// Layout
+@import 'layout/layout';
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 3px;
+    max-width: 300px;
+    height: 40%;
+    width: 50%;
+  }
+  
+  .search-box__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+  
+  .search-box__icon {
+    width: 16px;
+    height: 16px;
+    fill: #ccc;
+  }
+  
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  }
+  
+  .search-box {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  
+    @media screen and (min-width: 768px) {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .search-button {
+    width: 100%;
+    max-width: 200px;
+  
+    @media screen and (min-width: 768px) {
+      max-width: 100px;
+    }
+  }
+  
