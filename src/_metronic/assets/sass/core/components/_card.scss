@@ -8,7 +8,6 @@
     border: $card-border-width $card-border-style var(--#{$prefix}card-border-color);
   } @else {
     border: 0;
-    margin: 50px;
   }
 
   // Header
@@ -23,18 +22,11 @@
     background-color: var(--#{$prefix}card-cap-bg);
     border-bottom: $card-border-width $card-border-style var(--#{$prefix}card-border-color);
 
-    .dots {
-      width: 17px;
-      height: 6px;
-      object-fit: cover;
-      margin-bottom: 1px;
-      color: black;
-    }
     // Title
     .card-title {
       display: flex;
       align-items: center;
-      margin: 10px;
+      margin: $card-header-py;
       margin-left: 0;
 
       &.flex-column {
@@ -94,13 +86,11 @@
 
     // Toolbar
     .card-toolbar {
-      
       display: flex;
       align-items: center;
       margin: $card-header-py 0;
       flex-wrap: wrap;
     }
-    
   }
 
   // Body
